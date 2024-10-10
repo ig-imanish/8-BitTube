@@ -36,8 +36,8 @@ ehthumbs.db
 .vscode/
 .vscode/*
 
-# Ignore application.yml
-/src/main/resources/application.yml
+# Ignore application configuration files
+src/main/resources/application.yml
 
 
 # Spring Boot specific files
