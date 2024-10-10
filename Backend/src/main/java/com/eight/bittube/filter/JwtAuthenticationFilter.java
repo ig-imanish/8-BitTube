@@ -1,8 +1,6 @@
-package com.helloIftekhar.springJwt.filter;
+package com.eight.bittube.filter;
 
 
-import com.helloIftekhar.springJwt.service.JwtService;
-import com.helloIftekhar.springJwt.service.UserDetailsServiceImp;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
@@ -14,6 +12,9 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.web.authentication.WebAuthenticationDetailsSource;
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
+
+import com.eight.bittube.service.JwtService;
+import com.eight.bittube.service.UserDetailsServiceImp;
 
 import java.io.IOException;
 

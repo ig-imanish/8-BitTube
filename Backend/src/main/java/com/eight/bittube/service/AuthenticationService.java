@@ -1,4 +1,4 @@
-package com.helloIftekhar.springJwt.service;
+package com.eight.bittube.service;
 
 
 import java.util.List;
@@ -8,14 +8,15 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.helloIftekhar.springJwt.model.AuthenticationResponse;
-import com.helloIftekhar.springJwt.model.Role;
-import com.helloIftekhar.springJwt.model.Token;
-import com.helloIftekhar.springJwt.model.User;
-import com.helloIftekhar.springJwt.payloads.LoginRequest;
-import com.helloIftekhar.springJwt.payloads.RegisterRequest;
-import com.helloIftekhar.springJwt.repository.TokenRepository;
-import com.helloIftekhar.springJwt.repository.UserRepository;
+import com.eight.bittube.model.AuthenticationResponse;
+import com.eight.bittube.model.Role;
+import com.eight.bittube.model.Token;
+import com.eight.bittube.model.User;
+import com.eight.bittube.payloads.LoginRequest;
+import com.eight.bittube.payloads.RegisterRequest;
+import com.eight.bittube.repository.TokenRepository;
+import com.eight.bittube.repository.UserRepository;
+
 
 @Service
 public class AuthenticationService {

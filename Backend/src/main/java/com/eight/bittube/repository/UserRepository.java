@@ -1,7 +1,8 @@
-package com.helloIftekhar.springJwt.repository;
+package com.eight.bittube.repository;
 
-import com.helloIftekhar.springJwt.model.User;
 import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.eight.bittube.model.User;
 
 import java.util.Optional;
 

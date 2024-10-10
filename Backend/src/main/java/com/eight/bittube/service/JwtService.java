@@ -1,13 +1,15 @@
-package com.helloIftekhar.springJwt.service;
+package com.eight.bittube.service;
 
-import com.helloIftekhar.springJwt.model.User;
-import com.helloIftekhar.springJwt.repository.TokenRepository;
+
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.io.Decoders;
 import io.jsonwebtoken.security.Keys;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
+
+import com.eight.bittube.model.User;
+import com.eight.bittube.repository.TokenRepository;
 
 import javax.crypto.SecretKey;
 import java.util.Date;

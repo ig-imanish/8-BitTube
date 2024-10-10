@@ -1,10 +1,11 @@
-package com.helloIftekhar.springJwt.service;
+package com.eight.bittube.service;
 
-import com.helloIftekhar.springJwt.repository.UserRepository;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
+
+import com.eight.bittube.repository.UserRepository;
 
 @Service
 public class UserDetailsServiceImp implements UserDetailsService {

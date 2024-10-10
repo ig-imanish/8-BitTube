@@ -1,4 +1,4 @@
-package com.helloIftekhar.springJwt.model;
+package com.eight.bittube.model;
 
 
 import jakarta.persistence.*;

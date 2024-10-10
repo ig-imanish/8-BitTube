@@ -1,4 +1,4 @@
-package com.helloIftekhar.springJwt.controller;
+package com.eight.bittube.controller.user;
 
 import java.security.Principal;
 
@@ -9,11 +9,12 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.helloIftekhar.springJwt.model.AuthenticationResponse;
-import com.helloIftekhar.springJwt.model.Role;
-import com.helloIftekhar.springJwt.payloads.LoginRequest;
-import com.helloIftekhar.springJwt.payloads.RegisterRequest;
-import com.helloIftekhar.springJwt.service.AuthenticationService;
+import com.eight.bittube.model.AuthenticationResponse;
+import com.eight.bittube.model.Role;
+import com.eight.bittube.payloads.LoginRequest;
+import com.eight.bittube.payloads.RegisterRequest;
+import com.eight.bittube.service.AuthenticationService;
+
 
 @RestController
 @RequestMapping("/api/auth")

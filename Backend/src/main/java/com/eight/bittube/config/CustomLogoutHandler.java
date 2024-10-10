@@ -1,12 +1,14 @@
-package com.helloIftekhar.springJwt.config;
+package com.eight.bittube.config;
 
-import com.helloIftekhar.springJwt.model.Token;
-import com.helloIftekhar.springJwt.repository.TokenRepository;
+
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.web.authentication.logout.LogoutHandler;
+
+import com.eight.bittube.model.Token;
+import com.eight.bittube.repository.TokenRepository;
 
 @Configuration
 public class CustomLogoutHandler implements LogoutHandler {

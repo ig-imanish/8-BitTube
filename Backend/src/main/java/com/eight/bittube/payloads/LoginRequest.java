@@ -1,4 +1,4 @@
-package com.helloIftekhar.springJwt.payloads;
+package com.eight.bittube.payloads;
 
 public class LoginRequest {
 

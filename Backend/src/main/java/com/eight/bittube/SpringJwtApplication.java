@@ -1,13 +1,13 @@
-package com.helloIftekhar.springJwt;
+package com.eight.bittube;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.helloIftekhar.springJwt.model.Role;
-import com.helloIftekhar.springJwt.payloads.RegisterRequest;
-import com.helloIftekhar.springJwt.service.AuthenticationService;
+import com.eight.bittube.model.Role;
+import com.eight.bittube.payloads.RegisterRequest;
+import com.eight.bittube.service.AuthenticationService;
 
 @SpringBootApplication
 public class SpringJwtApplication implements CommandLineRunner {
