@@ -1,4 +1,4 @@
-package com.eight.bittube.service;
+package com.eight.bittube.service.auth;
 
 
 import io.jsonwebtoken.Claims;

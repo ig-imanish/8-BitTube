@@ -1,4 +1,4 @@
-package com.eight.bittube.model;
+package com.eight.bittube.payloads;
 
 public class AuthenticationResponse {
     private String token;

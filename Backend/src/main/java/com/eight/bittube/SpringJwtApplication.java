@@ -7,7 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import com.eight.bittube.model.Role;
 import com.eight.bittube.payloads.RegisterRequest;
-import com.eight.bittube.service.AuthenticationService;
+import com.eight.bittube.service.auth.AuthenticationService;
 
 @SpringBootApplication
 public class SpringJwtApplication implements CommandLineRunner {

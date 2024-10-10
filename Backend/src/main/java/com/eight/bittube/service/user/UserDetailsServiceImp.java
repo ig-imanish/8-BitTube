@@ -1,4 +1,4 @@
-package com.eight.bittube.service;
+package com.eight.bittube.service.user;
 
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
@@ -13,6 +13,7 @@ public class UserDetailsServiceImp implements UserDetailsService {
     private final UserRepository repository;
 
     public UserDetailsServiceImp(UserRepository repository) {
+        
         this.repository = repository;
     }
 

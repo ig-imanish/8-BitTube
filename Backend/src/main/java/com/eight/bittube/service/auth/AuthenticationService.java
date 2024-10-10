@@ -1,4 +1,4 @@
-package com.eight.bittube.service;
+package com.eight.bittube.service.auth;
 
 
 import java.util.List;
@@ -8,10 +8,10 @@ import org.springframework.security.authentication.UsernamePasswordAuthenticatio
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
-import com.eight.bittube.model.AuthenticationResponse;
 import com.eight.bittube.model.Role;
 import com.eight.bittube.model.Token;
 import com.eight.bittube.model.User;
+import com.eight.bittube.payloads.AuthenticationResponse;
 import com.eight.bittube.payloads.LoginRequest;
 import com.eight.bittube.payloads.RegisterRequest;
 import com.eight.bittube.repository.TokenRepository;

@@ -13,11 +13,11 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.eight.bittube.model.AuthenticationResponse;
 import com.eight.bittube.model.Role;
+import com.eight.bittube.payloads.AuthenticationResponse;
 import com.eight.bittube.payloads.LoginRequest;
 import com.eight.bittube.payloads.RegisterRequest;
-import com.eight.bittube.service.AuthenticationService;
+import com.eight.bittube.service.auth.AuthenticationService;
 
 @RestController
 @RequestMapping("/api/team")

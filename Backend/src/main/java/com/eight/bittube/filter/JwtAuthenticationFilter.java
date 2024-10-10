@@ -13,8 +13,8 @@ import org.springframework.security.web.authentication.WebAuthenticationDetailsS
 import org.springframework.stereotype.Component;
 import org.springframework.web.filter.OncePerRequestFilter;
 
-import com.eight.bittube.service.JwtService;
-import com.eight.bittube.service.UserDetailsServiceImp;
+import com.eight.bittube.service.auth.JwtService;
+import com.eight.bittube.service.user.UserDetailsServiceImp;
 
 import java.io.IOException;
 

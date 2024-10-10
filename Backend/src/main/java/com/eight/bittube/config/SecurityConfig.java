@@ -5,6 +5,7 @@ package com.eight.bittube.config;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.http.HttpStatus;
+import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.config.annotation.authentication.configuration.AuthenticationConfiguration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -17,12 +18,17 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.HttpStatusEntryPoint;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
+import org.springframework.transaction.PlatformTransactionManager;
+import org.springframework.transaction.annotation.EnableTransactionManagement;
 
 import com.eight.bittube.filter.JwtAuthenticationFilter;
-import com.eight.bittube.service.UserDetailsServiceImp;
+import com.eight.bittube.service.user.UserDetailsServiceImp;
+
+import jakarta.persistence.EntityManagerFactory;
 
 @Configuration
 @EnableWebSecurity
+@EnableTransactionManagement
 public class SecurityConfig {
 
     private final UserDetailsServiceImp userDetailsServiceImp;
@@ -78,6 +84,11 @@ public class SecurityConfig {
     @Bean
     public AuthenticationManager authenticationManager(AuthenticationConfiguration configuration) throws Exception {
         return configuration.getAuthenticationManager();
+    }
+
+    @Bean
+    public PlatformTransactionManager transactionManager(EntityManagerFactory emf) {
+        return new JpaTransactionManager(emf);
     }
 
 
